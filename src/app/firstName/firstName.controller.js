@@ -3,10 +3,10 @@
 
   angular
     .module('resolveExample')
-    .controller('MainController', MainController);
+    .controller('FirstNameController', FirstNameController);
 
   /** @ngInject */
-  function MainController(person) {
+  function FirstNameController(person) {
     var vm = this;
 
     vm.person = person;
