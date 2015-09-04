@@ -40,7 +40,8 @@
         controller: 'FullNameController',
         controllerAs: 'fullName',
         resolve: {
-          // override the person resolve from the main state
+          // override the person resolve for this state
+          // person instance passed into this resolve function is the 'main' person
           person: function(PersonService, person) {
             return PersonService.save(person);
           }
