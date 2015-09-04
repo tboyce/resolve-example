@@ -6,5 +6,8 @@
   The person JSON below is still the original person and has no full name (or an out of date one).
   The button below returns to the first state and reloads it, causing the original person to be resolved again.</p>
 
-<!-- Passing {reload: true} results in the destination state being reloaded, and all resolve functions executed again -->
+<!--
+  Passing {reload: true} results in the destination state being reloaded, and all resolve functions executed again.
+  Without {reload: true}, the firstName state (and all others) would continue to reference the original person.
+-->
 <button ui-sref="main.firstName" data-ui-sref-opts="{reload: true}">Start Over</button>
